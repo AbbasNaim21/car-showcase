@@ -2,12 +2,12 @@
 
 import { Fragment, useState } from "react";
 import Image from "next/image";
-import { CustomFIlterProps } from "@/types";
+import { CustomFilterProps } from "@/types";
 import { Listbox, Transition } from "@headlessui/react";
 import { type } from "os";
 import { updateSearchParams } from "@/utils";
 
-const CustomFilter = ({ title, options, setFilter }: CustomFIlterProps) => {
+const CustomFilter = ({ options, setFilter }: CustomFilterProps) => {
   const [selected, setSelected] = useState(options[0]);
 
   // const handleUpdateParams = (e: { title: string; value: string }) => {
